@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+</body>
+</html>
+
+
+
+<nav class="queen">
+<div class="one">
+<input id="inputbox" class="five" placeholder="Searching..."><br>
+<div class="two">
+<button class="three" id="btn">Add</button>
+<u1 id="container">
+ 
+    <button  class="four" onclick="deleteItem(event)">Delete</button>
+
+</u1>
+</div>
+</div>
+</nav>
+<script>
+  var inputbox = document.getElementById("inputbox")
+  var btn=document.getElementById("btn")
+  var container =document.getElementById("container")
+  var stn=document.getElementById("stn")
+ 
+
+  btn.addEventListener("click",function(){
+    var h1=document.createElement("h1")
+    h1.innerHTML=inputbox.value+ "<button onclick="+"deleteItem(event)"+">Delete</button>"
+    container.append(h1)
+    h1.style.color="black"
+ 
+
+  })
+  function deleteItem(event)
+  {
+    event.target.parentElement.remove()
+  }
+  </script>

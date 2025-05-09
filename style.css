@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Margarine&family=Oswald:wght@200..700&family=Satisfy&display=swap');
+:root{
+    /* font family */
+    --ff-primary:"roboto", sans-serif;
+    --ff-secondary:"inter", sans-serif;
+    --ff-design:"satisfy", cursive;
+    --ff-brand:"margarine", sans-serif;
+
+    /* colors */
+    --clr-white:#fff;
+    --clr-dark:#333;
+    --clr-grey-1:#102a42;
+    --clr-grey-2:#617d98;
+    --clr-grey-3:#f1f5f8;
+    --clr-primary:#f53b57;
+    --clr-primary-light:#f04660;
+    --clr-secondary:#e9b949;
+}
+*{
+    padding: 0;
+    margin: 0;
+    background-color:rgb(177, 236, 177);
+}
+.one{
+ 
+
+    
+    position: relative;
+    left: 300px;
+   
+}
+.two{
+    padding-top: 40px;
+    padding-left: 20px;
+
+}
+.three,.four{
+    background-image: linear-gradient( 180deg,black,red);
+    border: solid white 1px;
+    box-shadow: 0px 0px 30px red;
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+    font-family: var(--ff-brand);
+    color: grey;
+}
+.five{
+    width: 300px;
+    height: 10px;
+    position: relative;
+    right: 50px;
+    top: 20px;
+    border:  solid var(--clr-dark) 1px;
+    box-shadow: 0px 0px 50px var(--clr-dark);
+    color:white;
+    background-image: linear-gradient(180deg,black);
+    border-radius: 15px;
+    padding: 10px;
+   
+ 
+}
+@media screen and (max-width:600px) {
+    .queen{
+        position: relative;
+        right: 250px;
+       
+    }
+    .five{
+        width: 250px;
+        position: relative;
+        left: -20px;
+    }
+    .three,.four{
+        position: relative;
+        left: 10px;
+    }
+
+
+}
